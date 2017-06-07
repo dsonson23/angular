@@ -10,6 +10,7 @@ export class AppComponent {
   title = 'Angular Project';
 
   allowNewServer = false;
+  serverCreationStatus = "No server was created";
 
   constructor() {
     setTimeout(() => {
@@ -19,5 +20,9 @@ export class AppComponent {
 
   ngOnInit() {
 
+  }
+
+  onCreateServer() {
+    this.serverCreationStatus = "Server was created";
   }
 }

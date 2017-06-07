@@ -5,5 +5,12 @@
 <app-server></app-server>
 <app-server></app-server>
 <app-servers></app-servers>
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+    <!--[disabled] Property binding-->
+    <!--(click) Event binding-->
+<button class="btn btn-primary" [disabled]="!allowNewServer"
+(click)="onCreateServer()">Add Server</button>
+<p>{{ allowNewServer }}</p>
+<p [innerText]="allowNewServer"></p>
+<p>{{ serverCreationStatus }}</p>
 </section>
+ 
