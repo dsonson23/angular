@@ -12,5 +12,12 @@
 <p>{{ allowNewServer }}</p>
 <p [innerText]="allowNewServer"></p>
 <p>{{ serverCreationStatus }}</p>
+
+<!--Passing and using data binding with event-->
+<label>Server Name</label>
+<input type="text" 
+class="form-control" 
+(input)="updateServerName($event)">
+{{ serverName }}
 </section>
  
